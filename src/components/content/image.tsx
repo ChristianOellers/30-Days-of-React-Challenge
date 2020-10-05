@@ -1,3 +1,9 @@
+// @flow
+
+/**
+ * @todo Test 404 error handling after app-wide implementation of proper status code
+ */
+
 import React, { Component } from 'react';
 
 
@@ -5,8 +11,6 @@ type componentProps = {url: string};
 type componentState = {[value: string]: string};
 
 
-// Todo - Implement proper 404 error
-// (Currently even 404 requests have status 200)
 class Image extends Component<componentProps, componentState> {
   #url: string
   state: componentState

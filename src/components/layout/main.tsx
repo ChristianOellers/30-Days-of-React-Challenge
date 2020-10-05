@@ -1,3 +1,5 @@
+// @flow
+
 import React from 'react'
 
 import TechnologyList from 'components/content/technology-list'

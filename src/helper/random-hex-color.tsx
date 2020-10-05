@@ -1,4 +1,9 @@
-const hexColor = ():string => {
+// @flow
+
+/**
+ *
+ */
+const randomHexColor = (): string => {
   const str: string = '0123456789abcdef'
   let color: string = ''
 
@@ -11,5 +16,5 @@ const hexColor = ():string => {
 }
 
 
-export default hexColor
+export default randomHexColor
 

@@ -1,24 +1,10 @@
-const dateText = (time: Date): string => {
-  const months = [
-    'January',
-    'February',
-    'March',
-    'April',
-    'May',
-    'June',
-    'July',
-    'August',
-    'September',
-    'October',
-    'November',
-    'December',
-  ]
+/**
+ * Render text from a given date.
+ */
+const dateText = (date: Date): string => {
+  const text: string = new Intl.DateTimeFormat('en-US').format(date)
 
-  const month = months[time.getMonth()].slice(0, 3)
-  const year = time.getFullYear()
-  const date = time.getDate()
-
-  return `${month} ${date}, ${year}`
+  return `Date: ${text}`
 }
 
 

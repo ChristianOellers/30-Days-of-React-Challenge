@@ -1,11 +1,27 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
+// @flow
 
-import App from 'app'
+import React from 'react';
+import { hydrate, render } from 'react-dom';
+
+import App from './app';
 
 
-const rootElement = document.getElementById('root')
+if (process.env.NODE_ENV === 'development') {
+  // eslint-disable-next-line global-require
+  const whyDidYouRender = require('@welldone-software/why-did-you-render');
+
+  whyDidYouRender(React, {
+    trackAllPureComponents: true,
+  });
+}
 
 
-ReactDOM.render(<App />, rootElement)
+const rootElement: HTMLElement = document.getElementById( 'root' )!;
+
+if ( rootElement.hasChildNodes() ) {
+  hydrate( <App />, rootElement );
+} 
+else {
+  render( <App />, rootElement );
+}
 
