@@ -33,7 +33,7 @@ Deviating from the challenge
 - Custom architecture: Separate UI components from layout and shareable helpers
 - TypeScript integration
 - SCSS integration
-- Advanced linting - ESlint, Flow, Stylint, HTMLhint
+- Advanced linting – ESlint, Flow, Stylint, HTMLhint
 - Latest ES.next syntax (no respect to browser compatibility)
 
 
