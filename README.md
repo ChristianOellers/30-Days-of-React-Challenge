@@ -10,7 +10,7 @@
 
 ---
 
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=ChristianOellers_30-Days-Of-React&metric=alert_status)](https://sonarcloud.io/dashboard?id=ChristianOellers_30-Days-Of-React)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=ChristianOellers_30-Days-of-React-Challenge&metric=alert_status)](https://sonarcloud.io/dashboard?id=ChristianOellers_30-Days-of-React-Challenge)
 
 <br><br>
 
