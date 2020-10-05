@@ -20,6 +20,7 @@
 ## About
 
 Own adaption of the [30 Days of React Challenge](https://github.com/Asabeneh/30-Days-Of-React).
+
 Thank you, Asabeneh Yetayeh, for creating this course!
 
 
@@ -33,7 +34,6 @@ Deviating from the challenge (as of now ;)
 - TypeScript integration
 - SCSS integration
 - Advanced linting – ESlint, Flow, Stylint, HTMLhint
-- Latest ES.next syntax (no respect to browser compatibility)
 
 
 <br><br>
@@ -81,11 +81,11 @@ Why I chose this approach:
 
 | Structure | Details |
 |-----------|---------|
-| /components/content/ | Reusable content blocks of any complexity. Could be further grouped into sub-categories. |
-| /components/layout/ | Structural layout sections (pages/screens). Pass data to content-components. |
-| /components/ui/ | Interactive UI elements, e.g. forms, tooltips, popups ... |
-| /helpers/ | Render text without markup. Functional without side effects. No React/JSX. |
-| /modules/ | Application-wide features (e.g. routing, caching, APIs, access control ...). No React/JSX. |
+| `/components/content/` | Reusable content blocks of any complexity. Could be further grouped into sub-categories. |
+| `/components/layout/` | Structural layout sections (pages/screens). Pass data to content-components. |
+| `/components/ui/` | Interactive UI elements (e.g. forms, tooltips, popups). |
+| `/helpers/` | Render text without markup. Functional without side effects. No React/JSX. |
+| `/modules/` | Application-wide features (e.g. routing, caching, APIs, access control). No React/JSX. |
 
 
 <br><br>

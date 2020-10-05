@@ -1,5 +1,9 @@
 // @flow
 
+/**
+ * @todo Load data from external source
+ */
+
 import React from 'react'
 
 import TechnologyList from 'components/content/technology-list'

@@ -1,7 +1,7 @@
 // @flow
 
 /**
- * @todo Load text from API
+ * @todo Load data from external source
  */
 
 import React from 'react'
