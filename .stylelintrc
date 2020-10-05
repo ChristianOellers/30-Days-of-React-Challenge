@@ -1,10 +1,13 @@
 {
-  "extends": "stylelint-config-standard",
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-prettier"
+  ],
   "plugins": [
     "stylelint-scss"
   ],
   "ignoreFiles": [
-      "dist/**/*.css"
+    "dist/**/*.css"
   ],
   "rules": {
     "at-rule-empty-line-before": [
@@ -29,30 +32,23 @@
     "font-family-name-quotes": "always-where-recommended",
     "function-name-case": [
       "lower",
-      {
-        "ignoreFunctions": [
-          "DXImageTransform.Microsoft.gradient"
-        ]
-      }
+      {}
     ],
     "function-url-quotes": "always",
     "max-empty-lines": 2,
-    "max-nesting-depth": 10,
+    "max-nesting-depth": 4,
     "media-feature-name-no-unknown": [
       true,
       {
         "ignoreMediaFeatureNames": [
-          "min-device-pixel-ratio",
-          "min--moz-device-pixel-ratio"
+          "min-device-pixel-ratio"
         ]
       }
     ],
     "selector-pseudo-element-colon-notation": "double",
     "selector-pseudo-element-no-unknown": [
       true,
-      {
-        "ignorePseudoElements": []
-      }
+      {}
     ],
     "selector-type-no-unknown": null,
     "string-quotes": "double",

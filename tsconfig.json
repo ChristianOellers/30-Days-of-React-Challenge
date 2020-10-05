@@ -3,14 +3,8 @@
   "compilerOptions": {
     "baseUrl": "src",
     "target": "es2020",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
-    "typeRoots": [
-      "node_modules/@types",
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "typeRoots": ["node_modules/@types"],
     "allowJs": true,
     "allowSyntheticDefaultImports": true,
     "declaration": false,
@@ -30,7 +24,5 @@
     "sourceMap": true,
     "strict": true
   },
-  "include": [
-    "src"
-  ]
+  "include": ["src"]
 }
