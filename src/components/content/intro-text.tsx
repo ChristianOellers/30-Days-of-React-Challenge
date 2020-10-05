@@ -1,5 +1,12 @@
 // @flow
 
+/**
+ * Concept
+ * - Write 'component helpers' before the component to separate
+ *   code for potential further refactorings from the actual component.
+ *   - 'Instructor' could be outsourced, if it was more complex or required by other components.
+ */
+
 import React from 'react'
 
 

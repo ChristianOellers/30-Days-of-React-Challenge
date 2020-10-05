@@ -1,19 +1,15 @@
 // @flow
 
+/**
+ * Application entry point to serve app, handle environments
+ * and caching (ServiceWorker -> not implemented here).
+ */
+
 import React from 'react';
 import { hydrate, render } from 'react-dom';
 
-import App from './app';
-
-
-if (process.env.NODE_ENV === 'development') {
-  // eslint-disable-next-line global-require
-  const whyDidYouRender = require('@welldone-software/why-did-you-render');
-
-  whyDidYouRender(React, {
-    trackAllPureComponents: true,
-  });
-}
+import './env-dev';
+import App from 'components/app';
 
 
 const rootElement: HTMLElement = document.getElementById( 'root' )!;

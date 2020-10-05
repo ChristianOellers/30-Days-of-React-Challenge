@@ -1,12 +1,13 @@
 // @flow
 
-/**
- * Native 'PropTypes' implementation did not work with TypeScript and gave this error:
- * 'Property ... does not exist on type 'IntrinsicAttributes & IntrinsicClassAttributes ...'
- * 
+/** 
  * Concepts
  * - Custom interfaces + Prop types (solve TS-error described above in a more complex way)
  * - Custom prop type validator to check for empty strings (there might be better libraries here)
+ * - CSS style implementation (if defined here, should be animated or come from another source)
+ *
+ * Native 'PropTypes' implementation did not work with TypeScript and gave this error:
+ * 'Property ... does not exist on type 'IntrinsicAttributes & IntrinsicClassAttributes ...'
  *
  * @link https://stackoverflow.com/questions/34779183/typescript-errors-while-converting-a-react-project
  * @link https://stackoverflow.com/questions/42657792/typescript-react-redux-property-xxx-does-not-exist-on-type-intrinsicattrib
@@ -30,7 +31,7 @@ class Button extends React.Component<ButtonProps, any> {
   static propTypes = {};
 
   render() {
-    return <button style={styles}>{this.props.text}</button>
+    return <button className='btn' style={styles}>{this.props.text}</button>
   }
 }
 

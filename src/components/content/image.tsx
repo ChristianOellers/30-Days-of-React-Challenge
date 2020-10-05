@@ -1,7 +1,12 @@
 // @flow
 
 /**
- * @todo Test 404 error handling after app-wide implementation of proper status code
+ * Load external images and render as <img> element.
+ *
+ * Concept
+ * - Use the Promise-based fetch API; simply return empty content on broken URLs
+ *   - A more advanced version could introduce logging these errors somewhere
+ * - Use custom types for properties, as it's required by TypeScript here
  */
 
 import React, { Component } from 'react';
@@ -22,6 +27,9 @@ class Image extends Component<componentProps, componentState> {
     this.state = {url: ''}
   }
   
+  /**
+   * @todo Test 404 error handling after app-wide implementation of proper status code
+   */
   componentDidMount() {
     fetch(this.#url)
       .then(obj => this.setState({url: obj.url}) )

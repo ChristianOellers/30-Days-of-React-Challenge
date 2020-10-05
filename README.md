@@ -3,7 +3,9 @@
 # Own adaption
 
 - [About](#about)
+- [Features](#features)
 - [How to use](#how-to-use)
+- [Concepts](#concepts)
 - [Todo](#todo)
 
 <br>
@@ -11,6 +13,7 @@
 ---
 
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=ChristianOellers_30-Days-of-React-Challenge&metric=alert_status)](https://sonarcloud.io/dashboard?id=ChristianOellers_30-Days-of-React-Challenge)
+
 
 <br><br>
 
@@ -20,30 +23,11 @@ Own adaption of the [30 Days of React Challenge](https://github.com/Asabeneh/30-
 Thank you, Asabeneh Yetayeh, for creating this course!
 
 
-### Concepts
+<br><br>
 
-The code here focuses mostly on React, TypeScript and node module features.
+## Features
 
-My personal focus is on architecture and communication design for production-grade web application setups.
-As I apply different approaches within each component, please be aware of highly inconsistent code.
-
-The frontend is minimal to non-existent, as it's not relevant here.
-It will run, but be warned that it's rather unpleasant to see :)
-
-#### Reasoning
-
-Why I chose this approach:
-
-- Apply different problem-solving solutions as reference for future applications
-- It's not a real application (without actual requirements, there is no best way to go)
-- It's about possibilities, not best-practices (if you don't use TypeScript, some things will be vastly different)
-
-As example, I use many 'any' types, which should not be done, just because it's faster and not the focus to do here ;)
-
-
-### Features
-
-Deviating from the challenge
+Deviating from the challenge (as of now ;)
 
 - Custom architecture: Separate UI components from layout and shareable helpers
 - TypeScript integration
@@ -57,6 +41,7 @@ Deviating from the challenge
 ## How to use
 
 I recommend focusing on the source code, not the running app.
+For a general introduction to React I suggest checking the mentioned challenge.
 
 ### Setup
 
@@ -66,6 +51,42 @@ I recommend focusing on the source code, not the running app.
 
 1. Install node + modules
 2. Run `npm start`
+
+
+<br><br>
+
+## Concepts
+
+### Intro
+
+The code here focuses mostly on React, TypeScript and node module features.
+
+My personal focus is on architecture and communication design for production-grade web application setups.
+I apply different approaches within each component – Please be aware of highly inconsistent code.
+To simplify the code and speed up development, I deliberately ignore most of linting or advanced type checking. 
+
+The frontend is minimal to non-existent, as it's not relevant to me here.
+It will run, but be warned that it's rather unpleasant to see :)
+
+#### Reasoning
+
+Why I chose this approach:
+
+- Focus on backend architecture, not frontend (SCSS, proper markup)
+- Have different problem-solving solutions as reference for future applications
+- It's not a real application (without actual requirements, there is no best way to go)
+- It's about possibilities, not best-practices
+
+### Architecture
+
+| Structure | Details |
+|-----------|---------|
+| /components/content/ | Reusable content blocks of any complexity. Could be further grouped into sub-categories. |
+| /components/layout/ | Structural layout sections (pages/screens). Pass data to content-components. |
+| /components/ui/ | Interactive UI elements, e.g. forms, tooltips, popups ... |
+| /helpers/ | Render text without markup. Functional without side effects. No React/JSX. |
+| /modules/ | Application-wide features (e.g. routing, caching, APIs, access control ...). No React/JSX. |
+
 
 <br><br>
 

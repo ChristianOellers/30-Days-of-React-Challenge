@@ -1,7 +1,7 @@
 // @flow
 
 /**
- *
+ * Generate random hex color as text.
  */
 const randomHexColor = (): string => {
   const str: string = '0123456789abcdef'

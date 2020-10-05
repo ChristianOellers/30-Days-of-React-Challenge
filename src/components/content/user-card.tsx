@@ -1,5 +1,10 @@
 // @flow
 
+/**
+ * Concept
+ * - Just serves as playground for property parsing ...
+ */
+
 import React from 'react'
 
 import Image from './image'
@@ -15,15 +20,13 @@ const UserInfo = (props: any) => {
 }
 
 
-const UserCard = (props: any) => {
-  return (
-    <>
-      <Image url={props.imageUrl} />
-      <h2>User</h2>
-      <UserInfo age={props.age} />
-    </>
-  )
-}
+const UserCard = (props: any) => (
+  <>
+    <Image url={props.imageUrl} />
+    <h2>User</h2>
+    <UserInfo age={props.age} />
+  </>
+)
 
 
 export default UserCard
