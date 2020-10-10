@@ -92,6 +92,7 @@ Why I chose this approach:
 
 ## Todo
 
+- Integrate `Storybook` and `Styleguidist` in component design workflow
 - Implement actual 404 (React default redirects to home, which is status code 200)
   - Use case: `fetch` API use needs to properly detect wrong URLs
 
