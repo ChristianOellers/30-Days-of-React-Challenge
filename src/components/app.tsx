@@ -5,14 +5,13 @@
  * Controls overall layout/page/screen.
  */
 
-import React from 'react'
+import React from 'react';
 
-import Footer from 'layout/footer'
-import Header from 'layout/header'
-import Main from 'layout/main'
+import Footer from './layout/footer';
+import Header from './layout/header';
+import Main from './layout/main';
 
 import './app.scss';
-
 
 const App = () => (
   <div>
@@ -20,8 +19,6 @@ const App = () => (
     <Main />
     <Footer />
   </div>
-)
+);
 
-
-export default App
-
+export default App;
