@@ -5,20 +5,16 @@
  * - Just serves as playground for property parsing ...
  */
 
-import React from 'react'
+import React from 'react';
 
-import Image from './image'
-
+import Image from './image';
 
 const UserInfo = (props: any) => {
-  const year: number = new Date().getFullYear()
+  const year: number = new Date().getFullYear();
   const age: number = parseInt(props.age);
-  
-  return (
-    <p>Birth year: {year - age}</p>
-  )
-}
 
+  return <p>Birth year: {year - age}</p>;
+};
 
 const UserCard = (props: any) => (
   <>
@@ -26,8 +22,6 @@ const UserCard = (props: any) => (
     <h2>User</h2>
     <UserInfo age={props.age} />
   </>
-)
+);
 
-
-export default UserCard
-
+export default UserCard;

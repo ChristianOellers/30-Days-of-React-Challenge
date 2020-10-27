@@ -9,15 +9,14 @@ import React from 'react';
 import { hydrate, render } from 'react-dom';
 
 import './env-dev';
-import App from 'components/app';
+import App from './components/app';
 
+const rootElement: HTMLElement | null = document.getElementById('root');
 
-const rootElement: HTMLElement = document.getElementById( 'root' )!;
-
-if ( rootElement.hasChildNodes() ) {
-  hydrate( <App />, rootElement );
-} 
-else {
-  render( <App />, rootElement );
+if (rootElement) {
+  if (rootElement.hasChildNodes()) {
+    hydrate(<App />, rootElement);
+  } else {
+    render(<App />, rootElement);
+  }
 }
-

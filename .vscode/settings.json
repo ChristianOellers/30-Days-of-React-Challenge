@@ -17,7 +17,15 @@
   "scss.validate": false,
   "stylelint.enable": true,
   "flow.pathToFlow": "${workspaceRoot}/node_modules/.bin/flow",
-  "htmlhint.documentSelector": ["html"],
+  "htmlhint.documentSelector": [
+    "html"
+  ],
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.codeActionsOnSave": {
+      "source.fixAll.stylelint": true
+    }
+  },
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },

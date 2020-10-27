@@ -7,9 +7,9 @@
 
 import React from 'react';
 
-import dateText from 'helpers/date-text';
-import randomHexColor from 'helpers/random-hex-color';
-import Button from 'components/ui/button';
+import dateText from '../../helpers/date-text';
+import randomHexColor from '../../helpers/random-hex-color';
+import Button from '../ui/button';
 
 const Footer = () => (
   <>

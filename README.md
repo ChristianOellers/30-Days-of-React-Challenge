@@ -14,7 +14,6 @@
 
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=ChristianOellers_30-Days-of-React-Challenge&metric=alert_status)](https://sonarcloud.io/dashboard?id=ChristianOellers_30-Days-of-React-Challenge)
 
-
 <br><br>
 
 ## About
@@ -22,7 +21,6 @@
 Own adaption of the [30 Days of React Challenge](https://github.com/Asabeneh/30-Days-Of-React).
 
 Thank you, Asabeneh Yetayeh, for creating this course!
-
 
 <br><br>
 
@@ -34,7 +32,6 @@ Deviating from the challenge (as of now ;)
 - TypeScript integration
 - SCSS integration
 - Advanced linting – ESlint, Flow, Stylint, HTMLhint
-
 
 <br><br>
 
@@ -52,7 +49,6 @@ For a general introduction to React I suggest checking the mentioned challenge.
 1. Install node + modules
 2. Run `npm start`
 
-
 <br><br>
 
 ## Concepts
@@ -63,7 +59,7 @@ The code here focuses mostly on React, TypeScript and node module features.
 
 My personal focus is on architecture and communication design for production-grade web application setups.
 I apply different approaches within each component – Please be aware of highly inconsistent code.
-To simplify the code and speed up development, I deliberately ignore most of linting or advanced type checking. 
+To simplify the code and speed up development, I deliberately ignore most of linting or advanced type checking.
 
 The frontend is minimal to non-existent, as it's not relevant to me here.
 It will run, but be warned that it's rather unpleasant to see :)
@@ -79,14 +75,13 @@ Why I chose this approach:
 
 ### Architecture
 
-| Structure | Details |
-|-----------|---------|
+| Structure              | Details                                                                                  |
+| ---------------------- | ---------------------------------------------------------------------------------------- |
 | `/components/content/` | Reusable content blocks of any complexity. Could be further grouped into sub-categories. |
-| `/components/layout/` | Structural layout sections (pages/screens). Pass data to content-components. |
-| `/components/ui/` | Interactive UI elements (e.g. forms, tooltips, popups). |
-| `/helpers/` | Render text without markup. Functional without side effects. No React/JSX. |
-| `/modules/` | Application-wide features (e.g. routing, caching, APIs, access control). No React/JSX. |
-
+| `/components/layout/`  | Structural layout sections (pages/screens). Pass data to content-components.             |
+| `/components/ui/`      | Interactive UI elements (e.g. forms, tooltips, popups).                                  |
+| `/helpers/`            | Render text without markup. Functional without side effects. No React/JSX.               |
+| `/modules/`            | Application-wide features (e.g. routing, caching, APIs, access control). No React/JSX.   |
 
 <br><br>
 
@@ -95,4 +90,3 @@ Why I chose this approach:
 - Integrate `Storybook` and `Styleguidist` in component design workflow
 - Implement actual 404 (React default redirects to home, which is status code 200)
   - Use case: `fetch` API use needs to properly detect wrong URLs
-

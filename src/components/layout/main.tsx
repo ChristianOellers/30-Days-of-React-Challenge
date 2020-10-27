@@ -6,9 +6,8 @@
 
 import React from 'react';
 
-import TechnologyList from 'components/content/technology-list';
-import User from 'components/content/user';
-import UserCard from 'components/content/user-card';
+import TechnologyList from '../content/technology-list';
+import UserCard from '../content/user-card';
 
 const technologies: Array<string> = ['CSS', 'HTML', 'JS'];
 const userInfo: any = {
