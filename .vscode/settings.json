@@ -8,7 +8,8 @@
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
   "files.associations": {
-    ".*intrc": "json"
+    ".*intrc": "json",
+    ".mdx": "typescriptreact"
   },
   "css.validate": false,
   "json.format.enable": true,

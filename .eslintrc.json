@@ -23,6 +23,14 @@
     "react-hooks"
   ],
   "rules": {
+    "max-len": [
+      "warning",
+      {
+        "code": 140
+      }
+    ],
+    "object-curly-newline": "off",
+    "space-in-parens": "off",
     "import/extensions": [
       "error",
       "ignorePackages",
@@ -33,10 +41,8 @@
       }
     ],
     "import/no-unresolved": "error",
-    "object-curly-newline": "off",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
-    "react/jsx-one-expression-per-line": "off",
     "react/jsx-filename-extension": [
       1,
       {
@@ -46,7 +52,8 @@
         ]
       }
     ],
-    "space-in-parens": "off"
+    "react/jsx-one-expression-per-line": "off",
+    "react/jsx-props-no-spreading": "off"
   },
   "settings": {
     "import/extensions": [
