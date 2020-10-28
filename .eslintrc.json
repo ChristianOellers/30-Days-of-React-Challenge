@@ -22,9 +22,20 @@
     "react",
     "react-hooks"
   ],
+  "overrides": [
+    {
+      "files": [
+        "**/*.spec.tsx",
+        "tests/*.tsx"
+      ],
+      "env": {
+        "jest": true
+      }
+    }
+  ],
   "rules": {
     "max-len": [
-      "warning",
+      "warn",
       {
         "code": 140
       }

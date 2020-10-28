@@ -17,8 +17,6 @@ type componentState = { [value: string]: string };
 class Image extends Component<componentProps, componentState> {
   #url: string;
 
-  state: componentState;
-
   constructor(props: any) {
     super(props);
 
@@ -33,14 +31,14 @@ class Image extends Component<componentProps, componentState> {
     fetch(this.#url)
       .then((obj) => this.setState({ url: obj.url }))
       .catch((err) => {
-        throw new Error('Could not fetch image');
+        throw new Error(`Could not fetch image: ${err}`);
       });
   }
 
   render() {
     const { url } = this.state;
 
-    return url ? <img src={this.state.url} alt="" /> : <></>;
+    return url ? <img src={url} alt="" /> : <></>;
   }
 }
 

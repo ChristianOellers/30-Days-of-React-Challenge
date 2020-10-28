@@ -2,7 +2,7 @@
 
 /**
  * Concept
- * - Just serves as playground for property parsing ...
+ * - Playground for property parsing ...
  */
 
 import React from 'react';
@@ -10,18 +10,23 @@ import React from 'react';
 import Image from './image';
 
 const UserInfo = (props: any) => {
+  const { age } = props;
   const year: number = new Date().getFullYear();
-  const age: number = parseInt(props.age);
+  const ageNumber: number = parseInt(age, 10);
 
-  return <p>Birth year: {year - age}</p>;
+  return <p>Birth year: {year - ageNumber}</p>;
 };
 
-const UserCard = (props: any) => (
-  <>
-    <Image url={props.imageUrl} />
-    <h2>User</h2>
-    <UserInfo age={props.age} />
-  </>
-);
+const UserCard = (props: any) => {
+  const { age, imageUrl } = props;
+
+  return (
+    <>
+      <Image url={imageUrl} />
+      <h2>User</h2>
+      <UserInfo age={age} />
+    </>
+  );
+};
 
 export default UserCard;
