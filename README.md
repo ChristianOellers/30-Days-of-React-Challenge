@@ -12,7 +12,7 @@
 
 ---
 
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=ChristianOellers_30-Days-of-React-Challenge&metric=alert_status)](https://sonarcloud.io/dashboard?id=ChristianOellers_30-Days-of-React-Challenge)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=ChristianOellers_30-Days-of-React-Challenge&metric=alert_status)](https://sonarcloud.io/dashboard?id=ChristianOellers_30-Days-of-React-Challenge) [![Travis CI build status](https://travis-ci.com/ChristianOellers/30-Days-of-React-Challenge.svg?branch=main)](https://travis-ci.com/ChristianOellers/30-Days-of-React-Challenge)
 
 <br><br>
 
