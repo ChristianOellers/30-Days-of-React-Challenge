@@ -4,7 +4,6 @@
   "author": "Christian Oellers",
   "license": "MIT",
   "version": "0.0.1",
-  "main": "src/index.tsx",
   "private": true,
   "scripts": {
     "build": "react-scripts build",
